@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <h1>List Of Contacts</h1>
+    {% block contant %}
+        {% for contact in contact_list %}
+    <p> <strong>First Name:-</strong>{{ contact.first_name }}</p>
+         <p> <strong>Last Name:-</strong>{{ contact.last_name }}</p>
+        <p> <strong>Mobile:-</strong>{{ contact.mobile}}</p>
+            <hr>
+        {% endfor %}
+
+
+    {% endblock %}
+</head>
+<body>
+
+</body>
+</html>
